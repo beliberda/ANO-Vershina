@@ -40,7 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 32px 12px 41px 36px;
+        padding: 32px 0 41px 6px;
         // align-content: center;
         grid-column: 4 / -1;
         grid-row: 1; // make this image be on the same row
@@ -56,6 +56,11 @@
             font-weight: bold;
         }
         .text {
+            max-width: 140px;
+            width: 100%;
+            margin-top: 12px;
+            position: relative;
+            left: 20px;
             font-size: 14px;
         }
     }
@@ -140,44 +145,72 @@
         }
     }
     // ===============БЛОК ПАРТНЕРОВ===============
-    .Partner_of_center {
-        overflow: hidden;
-        color: Black;
-        min-height: 215px;
-        margin-top: 79px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .title {
-            font-weight: normal;
-            font-size: 24px;
-        }
-    }
-    .Partner_of_center__row {
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .partner_card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 16px 16px 16px 20px;
-        max-width: 191px;
-        height: 80px;
-        img {
-            max-width: 45px;
-            max-height: 45px;
-        }
-    }
-    .name_of_partner {
-        max-width: 94px;
-        margin-left: 16px;
-    }
+    // .Partner_of_center {
+    //     overflow: hidden;
+    //     color: Black;
+    //     min-height: 215px;
+    //     margin-top: 79px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     .title {
+    //         font-weight: normal;
+    //         font-size: 24px;
+    //     }
+    // }
+    // .Partner_of_center__row {
+    //     overflow: hidden;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    // }
+    // .partner_card {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     padding: 16px 16px 16px 20px;
+    //     max-width: 191px;
+    //     height: 80px;
+    //     img {
+    //         max-width: 45px;
+    //         max-height: 45px;
+    //     }
+    // }
+    // .name_of_partner {
+    //     max-width: 94px;
+    //     margin-left: 16px;
+    // }
     .Project_donate {
         min-height: 1024px;
         background-image: url("img/About_ipad_mini/background.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Project_donate__text_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 640px;
+            min-height: 308px;
+            .title {
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 120%;
+            }
+            .text {
+                line-height: 120%;
+                display: flex;
+                justify-content: space-between;
+                font-weight: normal;
+                font-size: 18px;
+            }
+            .button_donate {
+                align-self: flex-start;
+            }
+        }
+    }
+    .Project_donate:before {
+        background-color: rgba(0, 0, 0, .5);
     }
 }
 

@@ -272,6 +272,9 @@
         font-weight: normal;
         font-size: 24px;
     }
+    img {
+        max-width: 60px;
+    }
 }
 
 .Partner_of_center__row {
@@ -287,12 +290,14 @@
     justify-content: space-between;
     padding: 32px 39px 32px 32px;
     max-width: 256px;
+    width: 100%;
     height: 128px;
     background-color: #FFFFFF;
 }
 
 .name_of_partner {
     margin-left: 16px;
+    max-width: 107px;
 }
 
 // ===================ПОМОЩЬ ПРОЕКТУ================

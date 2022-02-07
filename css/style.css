@@ -1,0 +1,384 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+/*--------------------*/
+@font-face {font-family: "Helvetica Narrow";
+    src: url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/5a4cd90b04b94bfd8c4e37368228a4dd.svg#Helvetica Narrow") format("svg"); /* iOS 4.1- */
+}
+body {
+  font-family: "Helvetica Narrow", "Arial", sans-serif;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: black;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.header {
+  height: auto;
+  margin-bottom: -90px;
+  position: relative;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 67px 0 50px;
+}
+.header__logo {
+  margin-right: 50px;
+} 
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__body {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  max-width: 573px;
+}
+.header__menu {
+  flex-basis: 573px;
+}
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__list li {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+a {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 2px;
+}
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  border-bottom: 3px solid #BE0078;
+  padding-bottom: 2px;
+}
+
+.header__list li:last-child {
+  margin: 0;
+}
+.menu-icon {
+  font-size: 0;
+}
+@media (max-width:420px) {
+  .header__list li {
+    margin-right: 10%;
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 50px 0 50px;
+  }
+  .header {
+    margin-bottom: -110px;
+  }
+}
+/* #checkbox {
+  display: none;
+}
+#checkbox:checked ~ .header__menu ul {
+  max-height: 200px;
+  padding: 15px 0;
+  transition: all 0.5s;
+} */
+
+@media (max-width: 768px) {
+  .menu-icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+  }
+  
+}
+
+/* =================БЛОК 1 КАЛЕНДАРЬ================= */
+
+.calendar {
+  min-height: 697px;
+  padding-top: 203px;
+  background-image: url(../img/Block_1/Background_1.png);
+  background-size: cover;
+}
+.calendar__row {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+
+.calendar__body {
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 630px;
+}
+
+.calendar__butt {
+  display: flex;
+  background: #BE0078;
+  box-shadow: 1px 2px 10px 1px rgba(53, 0, 143, 0.7);
+  border-radius: 10px;
+  max-width: 250px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+
+/* ================Тур базы================= */
+
+.turbase {
+  min-height: 733px;
+  background-size: cover;
+  background-image: url(../img/Block_2_Tur_base/BG_TurBase.png);
+  padding-top: 45px;
+  padding-bottom: 74px;
+
+}
+
+.turbase__body {
+  font-size: 36px;
+  font-style: normal;
+  text-align: center;
+  line-height: 30px;
+}
+
+.turbase__row {
+  display: flex;
+  flex-direction: row;
+  margin:36px 0 0 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.turbase__pink_block {
+
+  padding: 48px 25px 23px 25px;
+  width: 350px;
+  height: 550px;
+  background: rgba(190, 0, 120, 0.3);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.pink_block__colomn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pink_block__colomn__image {
+ height: 150px;
+}
+
+.pink_block__colomn__text {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  flex-basis: 200px;
+}
+
+.pink_block__colomn__button {
+
+  width: 192px;
+  height: 52px;
+  box-shadow: 1px 2px 10px 1px rgba(53, 0, 143, 0.7);
+  background: #BE0078;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  margin: 0 0 0 6px;
+}
+/* .block__colomn__empty_block
+{
+  flex: 0 1 90px;
+} */
+.empty_block {
+  width: 15px;
+}
+@media (max-width:850px) {
+  .turbase__pink_block {
+    padding: 38px 15px 13px 15px;
+
+  }
+  .turbase__row {
+    justify-content: center;
+  }
+  .empty_block
+  {
+    width: 0;
+  }
+}
+
+/* @media (max-width:550px) {
+  .turbase__pink_block {
+    padding: 10px 5px 3px 5px;
+  }
+
+} */
+@media (max_width:420px) {
+  .container {
+     padding: 0;
+  }
+}
+/* ===================Block 3===================================== */
+
+
+.our_project {
+min-height:700px;
+background-image: url(../img/Block_3_project/BG_OurProj.png);
+background-size: cover;
+}
+
+.our_project__body {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.our_project__body__circle {
+  max-width: 440px;
+  min-height: 440px;
+  border-radius: 50%;
+  background: rgba(53, 0, 143, 0.8);
+  text-align: center;
+  margin: 0 auto;
+  padding: 34px 64px 76px 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+}
+
+.our_project__body__circle .text {
+margin-top: 28px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+flex: 1 1 273px;
+}
+.our_project__body__empty_block {
+  flex: 1 1 50px;
+}
+.our_project__body__logo_line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+
+
+
+
+
+/* ================================Подвал========================= */
+
+
+
+footer
+{
+  font-size: 18px;
+  width: 100%;
+  height: auto;
+  background-color: #35008F;
+  margin: 0;
+}
+.Block_Footer
+{
+  padding-top:30px;
+  margin-left: 50px;
+}
+
+/* Все права защищены */
+.Protect
+{
+  margin: 0;
+  line-height: 21px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* номер телефона */
+
+p.Phone-call
+{
+  max-width: 68.75%;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.04px;
+  text-align: Left;
+  margin-top: 20px;
+  margin-bottom: 19px;
+
+}
+/* номер вотс */
+.Whatsapp
+{
+  margin-top: 0;
+  padding-bottom: 24px;
+}
+footer img
+{
+  margin-right: 10px;
+  max-width: 20px;
+  max-height: 20px;
+  height: 100%;
+  width: 100%;
+}

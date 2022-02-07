@@ -5,24 +5,6 @@
     min-height: 513px;
 }
 
-@media (max-width:768px) {
-    .footer {
-        min-height: 673px;
-    }
-    .footer__column {
-        min-height: 616px;
-    }
-    .text {
-        font-size: 14px;
-    }
-    .title {
-        font-size: 18px;
-    }
-    .info_organiz {
-        max-width: 500px;
-    }
-}
-
 .footer {
     background-color: #fff;
 }
@@ -103,7 +85,7 @@
         text-decoration: underline black;
         color: Black;
     }
-    .contacts {
+    .contacts__768px {
         min-height: 97px;
         display: flex;
         flex-direction: column;
@@ -137,4 +119,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 1176px;
+}
+
+@media (max-width:768px) {
+    .footer {
+        display: none;
+    }
 }
