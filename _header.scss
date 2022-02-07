@@ -1,0 +1,266 @@
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+//fonts
+@font-face {
+    font-family: "Lato";
+    src: url(fonts/latoblack.woff);
+    src: url(fonts/latolight.woff);
+    src: url(fonts/latomedium.woff);
+    src: url(fonts/latobolditalic.woff);
+    src: url(fonts/latoregular.woff);
+    src: url(fonts/latothin.woff);
+    src: url(fonts/latosemibold.woff);
+}
+
+body {
+    font-family: "Lato";
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: black;
+    filter: blur(0px);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    // overflow: hidden;
+    .content {
+        flex: 1 1 auto;
+    }
+    .container {
+        max-width: 1312px;
+        height: auto;
+        margin: 0 auto;
+    }
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    letter-spacing: -0.02em;
+}
+
+.header {
+    position: relative;
+    padding-top: 61.29px;
+    background-image: url(img/Header/Background.png);
+    background-size: cover;
+    min-height: 1024px;
+    .container {
+        min-height: 1024px;
+    }
+}
+
+.header_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 960px;
+}
+
+.header__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .header__row__logo {
+        flex-basis: 191px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .header__logo__row {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            img {
+                width: 40px;
+                height: 56px;
+            }
+            p {
+                font-size: 44px;
+                font-weight: 600;
+                align-self: center;
+            }
+        }
+    }
+    .header__logo__row_2 {
+        background-color: #A93121;
+        min-width: 191px;
+        min-height: 13px;
+        display: flex;
+        justify-content: end;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 230px;
+        .menu_Doc {
+            display: flex;
+            justify-content: start;
+        }
+        .arrow {
+            margin-right: 4px;
+        }
+    }
+    .menu_otchet {
+        display: flex;
+        justify-content: start;
+    }
+    a:visited {
+        color: #FFFFFF;
+    }
+}
+
+.main__title_and_text {
+    // margin-top: 214px;
+    max-height: 414px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .Vershina_text {
+        margin-top: 16px;
+        max-height: 116px;
+        max-width: 749px;
+        align-self: flex-end;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 29px */
+        letter-spacing: -0.02em;
+    }
+    .Vershina_title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 120%;
+        /* or 77px */
+        letter-spacing: -0.02em;
+    }
+}
+
+.Button_help {
+    font-size: 24px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 304px;
+    min-height: 64px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.Button_help:hover {
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.Button {
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 56px;
+    }
+}

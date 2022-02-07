@@ -1,0 +1,140 @@
+.footer {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    min-height: 513px;
+}
+
+@media (max-width:768px) {
+    .footer {
+        min-height: 673px;
+    }
+    .footer__column {
+        min-height: 616px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .info_organiz {
+        max-width: 500px;
+    }
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.footer__column {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo {
+        max-width: 191px;
+        width: 100%;
+        height: 56px;
+    }
+}
+
+.info_organiz {
+    max-width: 528px;
+    width: 100%;
+    max-height: 235px;
+    .info_title {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .title {
+            font-weight: bold;
+            max-width: 192px;
+            width: 100%;
+        }
+        .text {
+            max-width: 304px;
+            width: 100%;
+            text-align: start;
+        }
+    }
+}
+
+.documents_and_contact {
+    max-width: 303px;
+    width: 100%;
+    min-height: 309px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .documents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 303px;
+        width: 100%;
+        min-height: 178px;
+    }
+    .title {
+        margin-bottom: 22px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .document {
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: underline black;
+        color: Black;
+    }
+    .contacts {
+        min-height: 97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            display: flex;
+            justify-content: space-between;
+            max-width: 238px;
+            width: 100%;
+        }
+        .Phone {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.hr_line {
+    margin: 26px 0;
+    border-top: 4px solid #E7E6E4
+}
+
+.social_buttons {
+    max-width: 168px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_social_and_pravo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1176px;
+}

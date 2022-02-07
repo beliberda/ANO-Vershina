@@ -1,0 +1,376 @@
+.About {
+    min-height: 4158px;
+    background-color: #E7E6E4;
+    color: black;
+}
+
+.About_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 128px;
+}
+
+.About__row {
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About_short {
+    font-size: 24px;
+}
+
+.Block_circle_info {
+    // 62%
+    // 31%
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    max-height: 192px;
+    img {
+        grid-column: 1 / span 8;
+        grid-row: 1; // must be on the same row as the other image
+        margin-top: 25px;
+        z-index: 1; // make this image render on top of the bottom
+        max-width: 94px;
+        width: 100%;
+        max-height: 96px;
+    }
+}
+
+.Block_inf_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 42px 36px 42px 47px;
+    align-content: center;
+    grid-column: 4 / -1;
+    grid-row: 1; // make this image be on the same row
+    max-width: 192px;
+    width: 100%;
+    height: 192px;
+    background-color: rgba($color: #A4BEBB, $alpha: 0.25);
+    border-radius: 50%;
+    align-items: center;
+    p {
+        color: #1A1A1A;
+        font-size: 64px;
+        font-weight: bold;
+    }
+    .text {
+        font-size: 16px;
+    }
+}
+
+.About__mission_NKO_popul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 48px;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    .title {
+        line-height: 120%;
+    }
+    .text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 120%;
+    }
+    ul {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        li {
+            margin-top: 20px;
+            list-style-type: disc;
+        }
+    }
+}
+
+.mission {
+    background-color: #FFFFFF;
+    max-width: 1310px;
+    width: 100%;
+    min-height: 341px;
+    padding: 32px 32px 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .text {
+        max-width: 1167px;
+        min-height: 203px;
+        align-self: flex-end;
+    }
+}
+
+.for_NKO {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    max-width: 636px;
+    width: 100%;
+    min-height: 647px;
+    padding: 32px 32px 36px 32px;
+    .title {
+        min-height: 58px;
+    }
+    .text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        max-width: 496px;
+        min-height: 87px;
+        align-self: flex-end;
+    }
+    ul {
+        align-self: flex-end;
+        max-width: 459px;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+.popul {
+    background-color: #FFFFFF;
+    max-width: 636px;
+    width: 100%;
+    min-height: 547px;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px 32px 36px 32px;
+    margin-left: 32px;
+    .title {
+        min-height: 58px;
+    }
+    .text {
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        max-width: 496px;
+        min-height: 87px;
+        align-self: flex-end;
+    }
+    ul {
+        margin-top: 18px;
+        align-self: flex-end;
+        max-width: 459px;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+.double_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+// ===============БЛОК НАШИ ПРОЕКТЫ===============
+.Our_project {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    min-height: 2067px;
+    img {
+        width: 863px;
+        height: 553px;
+        object-fit: cover;
+    }
+    .title {
+        // margin-bottom: 122px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .block__data__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.Our_project__block_1 {
+    display: flex;
+    justify-content: space-between;
+    .block__data__text {
+        max-height: 290px;
+        height: 100%;
+    }
+}
+
+.block__data {
+    max-width: 416px;
+    width: 100%;
+    max-height: 461px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 53px 29px 32px;
+    .text {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 120%;
+    }
+}
+
+.Our_project__block_2 {
+    // margin-top: 128px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .block__data {
+        max-width: 416px;
+        width: 100%;
+        max-height: 357px;
+    }
+    .text {
+        color: #A4BEBB;
+    }
+    .block__data__text {
+        max-height: 174px;
+        height: 100%;
+    }
+}
+
+.Our_project__block_3 {
+    display: flex;
+    justify-content: space-between;
+    .block__data {
+        max-height: 302px;
+    }
+    .block__data__text {
+        max-width: 416px;
+        max-height: 116px;
+        height: 100%;
+    }
+}
+
+// ===============БЛОК ПАРТНЕРОВ===============
+.Partner_of_center {
+    overflow: hidden;
+    margin-top: 128px;
+    min-height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+        font-weight: normal;
+        font-size: 24px;
+    }
+}
+
+.Partner_of_center__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.partner_card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 39px 32px 32px;
+    max-width: 256px;
+    height: 128px;
+    background-color: #FFFFFF;
+}
+
+.name_of_partner {
+    margin-left: 16px;
+}
+
+// ===================ПОМОЩЬ ПРОЕКТУ================
+.Help_project {
+    background-color: #A4BEBB;
+}
+
+.Help_project__column {
+    min-height: 1024px;
+    padding: 57px 0 0 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+    }
+    .heart {
+        max-width: 774px;
+        width: 100%;
+        max-height: 687px;
+        align-self: flex-end;
+    }
+}
+
+.Why_we_do {
+    .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 376px;
+    max-width: 972px;
+}
+
+.Why_we_do__block {
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    .text {
+        margin-top: 35px;
+        max-width: 862px;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 120%;
+        /* or 29px */
+        letter-spacing: -0.02em;
+        align-self: flex-end;
+    }
+}
+
+.button_donate {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 24px;
+    max-width: 304px;
+    width: 100%;
+    min-height: 64px;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .About,
+    .Help_project {
+        display: none;
+    }
+}
